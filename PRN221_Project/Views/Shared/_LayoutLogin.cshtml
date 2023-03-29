@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @*<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/20.1.55/material.css" />*@
+    <link href="https://cdn.syncfusion.com/ej2/20.1.55/bootstrap5-dark.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PRN221_Project.styles.css" asp-append-version="true" />
+    <script src="https://cdn.syncfusion.com/ej2/20.1.55/dist/ej2.min.js"></script>
+    <title>Centered Form Example</title>
+    <style>
+        html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.form {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.form input[type="text"] {
+			width: 80%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: none;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		.form input[type="text"], input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 12px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+			text-align: left;
+		}
+
+		.h1 {
+			font-size: 66px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+		.h2 {
+			font-size: 48px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+    </style>
+</head>
+<body class="e-bigger">
+    @RenderBody()
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <ejs-scripts></ejs-scripts>
+</body>
+</html>

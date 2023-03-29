@@ -548,3 +548,4 @@ C:\Users\Gigabyte\Desktop\PRN221_Project\PRN221_Project\PRN221_Project\obj\Debug
 C:\Users\Gigabyte\Desktop\PRN221_Project\PRN221_Project\PRN221_Project\obj\Debug\net6.0\PRN221_Project.pdb
 C:\Users\Gigabyte\Desktop\PRN221_Project\PRN221_Project\PRN221_Project\obj\Debug\net6.0\PRN221_Project.genruntimeconfig.cache
 C:\Users\Gigabyte\Desktop\PRN221_Project\PRN221_Project\PRN221_Project\obj\Debug\net6.0\ref\PRN221_Project.dll
+C:\Users\Gigabyte\Desktop\PRN221_Project\PRN221_Project\PRN221_Project\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutLogin.cshtml.rz.scp.css
