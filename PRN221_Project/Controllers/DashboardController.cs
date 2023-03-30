@@ -17,6 +17,8 @@ namespace PRN221_Project.Controllers
 
         public async Task<ActionResult> Index()
         {
+            int id = HttpContext.Session.GetInt32("id") ?? 0;
+            if (id == 0) return Redirect("../Login/Index");
             //Last 7 Days
             DateTime StartDate = DateTime.Today.AddDays(-6);
             DateTime EndDate = DateTime.Today.AddDays(1);
@@ -101,6 +103,7 @@ namespace PRN221_Project.Controllers
             //Recent Transactions
             ViewBag.RecentTransactions = await _context.Transactions
                 .Include(i => i.Category)
+                .Where(u => u.AccountId == AccountId)
                 .OrderByDescending(j => j.Date)
                 .Take(5)
                 .ToListAsync();

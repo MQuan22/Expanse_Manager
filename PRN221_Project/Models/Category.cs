@@ -26,5 +26,15 @@ namespace PRN221_Project.Models
                 return this.Icon + " " + this.Title;
             }
         }
+
+        [NotMapped]
+        public string? TitleWithIconWithType
+        {
+            get
+            {
+                if (this.Type == "") return this.Icon + " " + this.Title;
+                return this.Icon + " " + this.Title + " (" + this.Type + ")";
+            }
+        }
     }
 }

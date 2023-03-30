@@ -12,8 +12,9 @@ namespace PRN221_Project.Controllers
             _context = context;
         }
 
-        public async Task<ActionResult> Index()
+        public async Task<IActionResult> Index()
         {
+            HttpContext.Session.Clear();
             return View();
         }
 
@@ -30,7 +31,7 @@ namespace PRN221_Project.Controllers
                     HttpContext.Session.SetInt32("id", find.AccountId);
                     return Redirect("../Dashboard/Index");
                 }
-                else return Redirect("../Home/Privacy");
+               
             }
             return RedirectToAction(nameof(Index));
         }

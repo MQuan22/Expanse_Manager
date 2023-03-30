@@ -15,6 +15,8 @@ namespace PRN221_Project.Controllers
 
         public IActionResult Index()
         {
+            int id = HttpContext.Session.GetInt32("id") ?? 0;
+            if (id == 0) return Redirect("../Login/Index");
             return View();
         }
 
