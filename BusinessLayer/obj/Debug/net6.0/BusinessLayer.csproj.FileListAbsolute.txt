@@ -1,0 +1,17 @@
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\bin\Debug\net6.0\BusinessLayer.runtimeconfig.json
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\bin\Debug\net6.0\DataLayer.dll
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\bin\Debug\net6.0\DataLayer.pdb
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\BusinessLayer.genruntimeconfig.cache
+C:\Users\Gigabyte\Desktop\New\Expanse_Manager\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll

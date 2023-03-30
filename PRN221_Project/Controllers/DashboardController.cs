@@ -19,6 +19,7 @@ namespace PRN221_Project.Controllers
         {
             int id = HttpContext.Session.GetInt32("id") ?? 0;
             if (id == 0) return Redirect("../Login/Index");
+
             //Last 7 Days
             DateTime StartDate = DateTime.Today.AddDays(-6);
             DateTime EndDate = DateTime.Today.AddDays(1);
@@ -47,7 +48,7 @@ namespace PRN221_Project.Controllers
             culture.NumberFormat.CurrencyNegativePattern = 1;
             ViewBag.Balance = String.Format(culture, "{0:C0}", Balance);
 
-            //Doughnut Chart - Expense By Category
+            //Expense By Category
             ViewBag.DoughnutChartData = SelectedTransactions
                 .Where(i => i.Category.Type == "Expense" && i.AccountId == AccountId)
                 .GroupBy(j => j.Category.CategoryId)
@@ -59,8 +60,6 @@ namespace PRN221_Project.Controllers
                 })
                 .OrderByDescending(l => l.amount)
                 .ToList();
-
-            //Spline Chart - Income vs Expense
 
             //Income
             List<SplineChartData> IncomeSummary = SelectedTransactions
