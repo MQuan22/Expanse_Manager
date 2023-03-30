@@ -30,9 +30,20 @@ namespace PRN221_Project.Controllers
         {
             PopulateCategories();
             if (id == 0)
-                return View(new Transaction());
+                return View(new TransactionForm());
             else
-                return View(_context.Transactions.Find(id));
+            {
+                TransactionForm transactionForm= new TransactionForm();
+                Transaction transaction = _context.Transactions.Find(id);
+                transactionForm.TransactionId = transaction.TransactionId;
+                transactionForm.AccountId = transaction.AccountId;
+                transactionForm.CategoryId = transaction.CategoryId;
+                transactionForm.Amount = transaction.Amount;
+                transactionForm.Date = transaction.Date;
+                transactionForm.Note = transaction.Note;
+                return View(transactionForm);
+            }
+                
         }
 
         // POST: Transaction/AddOrEdit
@@ -40,10 +51,19 @@ namespace PRN221_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddOrEdit([Bind("TransactionId,CategoryId,Amount,Note,Date")] Transaction transaction)
+        public async Task<IActionResult> AddOrEdit([Bind("TransactionId,CategoryId,AccountId,Amount,Note,Date")] TransactionForm transactionForm)
         {
             if (ModelState.IsValid)
             {
+                Transaction transaction = new Transaction();
+                transaction.TransactionId = transactionForm.TransactionId;
+                transaction.Amount = transactionForm.Amount;
+                transaction.Note = transactionForm.Note;
+                transaction.Date = transaction.Date;
+                transaction.CategoryId = transactionForm.CategoryId;
+                transaction.AccountId = HttpContext.Session.GetInt32("id") ?? 0;
+                transaction.Account = _context.Accounts.FirstOrDefault(c => c.AccountId == transaction.AccountId);
+                transaction.Category = _context.Categories.FirstOrDefault(c => c.CategoryId == transaction.CategoryId);
                 if (transaction.TransactionId == 0)
                     _context.Add(transaction);
                 else
@@ -52,7 +72,7 @@ namespace PRN221_Project.Controllers
                 return RedirectToAction(nameof(Index));
             }
             PopulateCategories();
-            return View(transaction);
+            return View(transactionForm);
         }
 
         // POST: Transaction/Delete/5

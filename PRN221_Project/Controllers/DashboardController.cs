@@ -19,22 +19,23 @@ namespace PRN221_Project.Controllers
         {
             //Last 7 Days
             DateTime StartDate = DateTime.Today.AddDays(-6);
-            DateTime EndDate = DateTime.Today;
+            DateTime EndDate = DateTime.Today.AddDays(1);
+            int AccountId = HttpContext.Session.GetInt32("id") ?? 0;
 
             List<Transaction> SelectedTransactions = await _context.Transactions
                 .Include(x => x.Category)
-                .Where(y => y.Date >= StartDate && y.Date <= EndDate)
+                .Where(y => y.Date >= StartDate && y.Date <= EndDate && y.AccountId == AccountId)
                 .ToListAsync();
 
             //Total Income
             int TotalIncome = SelectedTransactions
-                .Where(i => i.Category.Type == "Income")
+                .Where(i => i.Category.Type == "Income" && i.AccountId == AccountId)
                 .Sum(j => j.Amount);
             ViewBag.TotalIncome = TotalIncome.ToString("C0");
 
             //Total Expense
             int TotalExpense = SelectedTransactions
-                .Where(i => i.Category.Type == "Expense")
+                .Where(i => i.Category.Type == "Expense" && i.AccountId == AccountId)
                 .Sum(j => j.Amount);
             ViewBag.TotalExpense = TotalExpense.ToString("C0");
 
@@ -46,7 +47,7 @@ namespace PRN221_Project.Controllers
 
             //Doughnut Chart - Expense By Category
             ViewBag.DoughnutChartData = SelectedTransactions
-                .Where(i => i.Category.Type == "Expense")
+                .Where(i => i.Category.Type == "Expense" && i.AccountId == AccountId)
                 .GroupBy(j => j.Category.CategoryId)
                 .Select(k => new
                 {
@@ -61,7 +62,7 @@ namespace PRN221_Project.Controllers
 
             //Income
             List<SplineChartData> IncomeSummary = SelectedTransactions
-                .Where(i => i.Category.Type == "Income")
+                .Where(i => i.Category.Type == "Income" && i.AccountId == AccountId)
                 .GroupBy(j => j.Date)
                 .Select(k => new SplineChartData()
                 {
@@ -72,7 +73,7 @@ namespace PRN221_Project.Controllers
 
             //Expense
             List<SplineChartData> ExpenseSummary = SelectedTransactions
-                .Where(i => i.Category.Type == "Expense")
+                .Where(i => i.Category.Type == "Expense" && i.AccountId == AccountId)
                 .GroupBy(j => j.Date)
                 .Select(k => new SplineChartData()
                 {
