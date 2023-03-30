@@ -1,0 +1,33 @@
+﻿@model double?
+@using Microsoft.AspNetCore.Http
+
+<h1>Interest Rate Calculator</h1>
+
+
+
+<div class="col-md-7">
+    <div class="widget p-5" style="background-color:#212b36">
+        <p style="font-size: 14px; color: yellow;">Imagine you send money to bank, it has interest rate x%, and you leave it for n months, we will help you calculate the total money you will receive after n months</p>
+        <form method="post">
+            <div class="mb-3">
+                <label for="money">Amount of money:</label>
+                <input type="number" class="form-control" id="money" name="money" step="0.1" min="0" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="rate">Monthly interest rate(%):</label>
+                <input type="number" class="form-control" id="rate" name="rate" step="0.01" min="0" required>
+            </div>
+            <div class="mb-3">
+                <label for="month">Number of months:</label>
+                <input type="number" class="form-control" id="month" name="month" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-calculator"></i> Calculate</button>
+        </form>
+    </div>
+</div>
+
+@if (Model.HasValue)
+{
+    <p style="color:aqua">The result of the calculation is: @Model</p>
+}

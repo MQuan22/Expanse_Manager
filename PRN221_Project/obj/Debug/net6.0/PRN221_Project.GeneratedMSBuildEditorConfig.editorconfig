@@ -9,73 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Expense_Tracker
 build_property.RootNamespace = Expense_Tracker
-build_property.ProjectDir = C:\Users\Gigabyte\Desktop\PRN221_Project\PRN221_Project\PRN221_Project\
+build_property.ProjectDir = E:\Monhocki7\PRN221\Expanse_Manager\PRN221_Project\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Gigabyte\Desktop\PRN221_Project\PRN221_Project\PRN221_Project
+build_property.MSBuildProjectDirectory = E:\Monhocki7\PRN221\Expanse_Manager\PRN221_Project
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Category/AddOrEdit.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Category/AddOrEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkT3JFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Category/Index.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Dashboard/Index.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Count/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Home/Index.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Home/Privacy.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Login/Index.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Register/Index.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Register/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Shared/Error.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Shared/_SideBar.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Shared/_SideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlQmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Transaction/AddOrEdit.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Transaction/AddOrEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cQWRkT3JFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Transaction/Index.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Transaction/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/_ViewImports.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/_ViewStart.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Shared/_Layout.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-461apeu0bw
 
-[C:/Users/Gigabyte/Desktop/PRN221_Project/PRN221_Project/PRN221_Project/Views/Shared/_LayoutLogin.cshtml]
+[E:/Monhocki7/PRN221/Expanse_Manager/PRN221_Project/Views/Shared/_LayoutLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-dcixrsm3ti
