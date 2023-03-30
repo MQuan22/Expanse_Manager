@@ -21,6 +21,8 @@ namespace PRN221_Project.Controllers
         // GET: Category
         public async Task<IActionResult> Index()
         {
+            int id = HttpContext.Session.GetInt32("id") ?? 0;
+            if (id == 0) return Redirect("../Login/Index");
             return _context.Categories != null ?
                         View(await _context.Categories.ToListAsync()) :
                         Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
@@ -46,12 +48,17 @@ namespace PRN221_Project.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (category.CategoryId == 0)
-                    _context.Add(category);
-                else
-                    _context.Update(category);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                var find = _context.Categories.FirstOrDefault(x => x.Title == category.Title && x.Type == category.Type);
+                if (find == null)
+                {
+                    if (category.CategoryId == 0)
+                        _context.Add(category);
+                    else
+                        _context.Update(category);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+               
             }
             return View(category);
         }

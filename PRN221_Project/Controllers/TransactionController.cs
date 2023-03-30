@@ -21,7 +21,9 @@ namespace PRN221_Project.Controllers
         // GET: Transaction
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Transactions.Include(t => t.Category);
+            int id = HttpContext.Session.GetInt32("id") ?? 0;
+            if (id == 0) return Redirect("../Login/Index");
+            var applicationDbContext = _context.Transactions.Include(t => t.Category).Where(x => x.AccountId == id);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -99,7 +101,7 @@ namespace PRN221_Project.Controllers
         public void PopulateCategories()
         {
             var CategoryCollection = _context.Categories.ToList();
-            Category DefaultCategory = new Category() { CategoryId = 0, Title = "Choose a Category" };
+            Category DefaultCategory = new Category() { CategoryId = 0, Title = "Choose a Category", Type = "" };
             CategoryCollection.Insert(0, DefaultCategory);
             ViewBag.Categories = CategoryCollection;
         }

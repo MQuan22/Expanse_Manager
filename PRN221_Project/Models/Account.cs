@@ -17,9 +17,6 @@ namespace PRN221_Project.Models
         public string Password { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]
-        public string Email { get; set; }
-
-        [Column(TypeName = "nvarchar(50)")]
-        public string Role { get; set; }
+        public string Fullname { get; set; }
     }
 }
